@@ -1,4 +1,3 @@
-# Syn code spaces is very high risk, sometimes fails
 from flask import Flask,request,render_template
 
 app = Flask(__name__)
@@ -11,7 +10,5 @@ def index():
     return(render_template("index.html"))
 
 if __name__ == "__main__":
-    app.run()
-
-
+    app.run(port=1111)
 
